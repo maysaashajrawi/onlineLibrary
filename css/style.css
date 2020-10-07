@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0
+}
+
+.form-inline{
+margin-top:9px;
+/*float:right;*/
+}
+
+.nav{
+	margin-bottom: 20px
+}
+.choose{
+	/*margin-top:70px;*/
+}
+.cover{
+	width: 150px;
+    height: 200px;
+}
+.hide{
+	display:none;
+}
+.show{
+	display: block;
+}
+
+#religious,#historical,#human-developement,#scientific,#educational{
+margin-top: 20px;
+padding: 15px;
+}
