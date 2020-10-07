@@ -3,10 +3,25 @@
 	margin: 0;
 	padding: 0
 }
-
+/* #main{
+	background-image: url("../img/background.jpg");
+	/* background-position: center; Center the image */
+  	/* background-repeat: no-repeat; Do not repeat the image */
+	  /* background-size: cover; */
+	  /* opacity: 0.3; */
+/* } */ 
+#searchInput{
+	margin-top:5px;
+}
 .form-inline{
-margin-top:9px;
+
 /*float:right;*/
+}
+.searchResult{
+	margin-top: 20px;
+}
+.searchbar{
+	margin-right: 10px;
 }
 label{
 	font-size: 25px;
@@ -16,7 +31,7 @@ label{
 .nav{
 	margin-bottom: 20px
 }
-#bookType{
+#bookType,#searchInput{
 	border: 1px solid #ddd;
     border-radius: 7px;
     padding: 8px;
@@ -32,7 +47,9 @@ label{
 .show{
 	display: block;
 }
-
+.h{
+	margin-top: 20px;
+}
 #religious,#historical,#human-developement,#scientific,#educational{
 margin-top: 20px;
 padding: 15px;
@@ -50,12 +67,13 @@ padding: 15px;
 }
 .description{
 	
-	font-size: 15px;
+	font-size: 11px;
 	/* text-align: right; */
 	font-weight:bold
 }
 
 .title{
+	color:#063c69
 	/* text-align: center; */
 }
 .text-book{

@@ -12,29 +12,18 @@
 
 </head>
 <body>
+<div id="main">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Online Library</a>
     </div>
-    <form class="form-inline col-md-5 navbar-right ">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
+    <div class="searchbar navbar-right">
+    <input id="searchInput" class="mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0"  onclick='searchFunc()'>Search</button>
+  </div>
   </div>
 </nav>
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="container">
 	<div class="row">
 		<div></div>
@@ -46,7 +35,7 @@
 					<option value="historical" class="op"><a href="#historical">Historical</a></option>
 					<option value="human-developement" class="op"><a href="#human-developement">Human developement</a></option>
 					<option value="scientific" class="op"><a href="#scientific">scientific</a></option>
-					<option value="educational" class="op"><a href ="#educational"></a>Educational</option>
+					
 
 				</select>
 
@@ -62,21 +51,31 @@
 
 <div class="container">
 	<div class="row h">
-	<div id="religious" class='hide'></div>
-	<div id="historical" class='hide'></div>
-	<div id="human-developement" class='hide'></div>
-	<div id="scientific" class='hide'></div>
-	<div id="educational" class='hide'></div>
-	
+	<div class="forSearch">
+	<div id="religious" class='ho hide'></div>
+	<div id="historical" class='ho hide'></div>
+	<div id="human-developement" class='ho hide'></div>
+	<div id="scientific" class='ho hide'></div>
+	<div id="searchresult" class='ho hide'></div>
+	</div>
 	</div>
 
 </div>
 
+	<div class="container">
+		<div class="row searchResult">
+
+		</div>
+	</div>
 
 
 
 
 
+
+
+
+</div>
 
 
 
