@@ -1,3 +1,5 @@
+// array of object for human-developement books
+
 var humanDevelopement = [{name:"مميز بالأصفر",
                           img:"img/A-2.jpg",
                           description:'يمتعنا "إتش. جاكسون براون" فى كتابه مميز بالأصفر" بمجموعة من القصص والاقتباسات التى تدل على فهم عميق لأسس الحياة الطيبة، فهذا الكتاب يعد مقرراً تعليمياً مختصراً فى كيفية العيش بحكمة والاختيار بذكاء، يسلط فيه الكاتب الضوء على أهمية التصرف بلطف وكرم وإحسان مع الآخرين، وتوطيد علاقات قوية راسخة مع الأشخاص الذين نحبهم، واختيار توجهات ذهنية تساعدنا أثناء عيش ساعات الحياة اليومية العادية، واكتشاف معنى الرضا والإشباع النابعين من تقدير المتع البسيطة والاستمتاع بها.',
@@ -34,6 +36,8 @@ var humanDevelopement = [{name:"مميز بالأصفر",
                               }
 
                         ] ;
+
+// array of object of religious books                        
                         
 var religious=[{
                         name:"اول مرة اصلي",
@@ -82,6 +86,7 @@ var religious=[{
                         url:'https://foulabook.com/ar/book/%D8%A8%D8%A3%D9%8A-%D9%82%D9%84%D8%A8-%D9%86%D9%84%D9%82%D8%A7%D9%87-pdf'
                       }
                     ]
+// array of object of historical books 
 var historical=[{name:"سيرة أمير المؤمنين عمر بن الخطاب",
                  img:"img/h1.jpg",
                  description:'يقدم الصلابى شخصية امير المؤمنين عمر بن الخطاب بصورة مميزة كما لم يتحدث عنها كاتب من قبل، يتناول الصلابى فى هذا الكتاب عصر أمير المؤمنين ومراحل حياته و أهم الأحداث فى حياته منذ ولادته وحتى توليه زمام أمور الدولة الإسلامية وتوليه شأن المسلمين.',
@@ -133,45 +138,148 @@ function check(){
   
 
   var type=document.getElementById("bookType").value;
-  if($('#'+type).hasClass("hide")){
-    $('#'+type).addClass("show");
-    $('#'+type).removeClass("hide");
-
-  }else{
-    $('#'+type).removeClass("show");
-    $('#'+type).addClass("hide");
-  }
-
+ 
+//to appear human-developement books
   if(type === "human-developement"){
+    if($('#human-developement').hasClass("hide")){
+      $('#human-developement').addClass("show");
+      $('#human-developement').removeClass("hide");
+      if($('#religious').hasClass('show')){
+        $('#religious').addClass('hide');
+        $('#religious').removeClass('show');
+      }
+      if($('#historical').hasClass('show')){
+        $('#historical').addClass('hide');
+        $('#historical').removeClass('show');
+      } 
+      if($('#scientific').hasClass('show')){
+        $('#scientific').addClass('hide');
+        $('#scientific').removeClass('show');
+      }
+      if($('#educational').hasClass('show')){
+        $('#educational').addClass('hide');
+        $('#educational').removeClass('show');
+      }
     
-    .one(createElement(humanDevelopement , type));
+    }else{
+      $('#'+type).removeClass("show");
+      $('#'+type).addClass("hide");
+    }
+    (createElement(humanDevelopement , type));
    
 
-  }else if(type === "religious"){
-    createElement(religious,type);
   }
-  
 
+//to appear religious books
+  else if(type === "religious"){
+    createElement(religious,type);
+    if($('#religious').hasClass('hide')){
+      $('#religious').addClass('show');
+      $('#religious').removeClass('hide');
+    
+    if($('#human-developement').hasClass("show")){
+      $('#human-developement').addClass("hide");
+      $('#human-developement').removeClass("show");
+    }
+      if($('#historical').hasClass('show')){
+        $('#historical').addClass('hide');
+        $('#historical').removeClass('show');
+      } 
+      if($('#scientific').hasClass('show')){
+        $('#scientific').addClass('hide');
+        $('#scientific').removeClass('show');
+      }
+      if($('#educational').hasClass('show')){
+        $('#educational').addClass('hide');
+        $('#educational').removeClass('show');
+      }
+    
+    }else{
+      $('#'+type).removeClass("show");
+      $('#'+type).addClass("hide");
+    }
+
+
+
+
+
+  }
+  //to appear historical books
+  else if(type === "historical"){
+    if($('#historical').hasClass("hide")){
+      $('#historical').addClass("show");
+      $('#historical').removeClass("hide");
+      if($('#religious').hasClass('show')){
+        $('#religious').addClass('hide');
+        $('#religious').removeClass('show');
+      }
+      if($('#human-developement').hasClass('show')){
+        $('#human-developement').addClass('hide');
+        $('#human-developement').removeClass('show');
+      } 
+      if($('#scientific').hasClass('show')){
+        $('#scientific').addClass('hide');
+        $('#scientific').removeClass('show');
+      }
+      if($('#educational').hasClass('show')){
+        $('#educational').addClass('hide');
+        $('#educational').removeClass('show');
+      }
+    
+    }else{
+      $('#'+type).removeClass("show");
+      $('#'+type).addClass("hide");
+    }
+    (createElement(historical , type));
+   
+
+  }
+  //to appear historical books
+  else if(type === "educational"){
+    if($('#educational').hasClass("hide")){
+      $('#educational').addClass("show");
+      $('#educational').removeClass("hide");
+
+      if($('#religious').hasClass('show')){
+        $('#religious').addClass('hide');
+        $('#religious').removeClass('show');
+      }
+      if($('#human-developement').hasClass('show')){
+        $('#human-developement').addClass('hide');
+        $('#human-developement').removeClass('show');
+      } 
+      if($('#scientific').hasClass('show')){
+        $('#scientific').addClass('hide');
+        $('#scientific').removeClass('show');
+      }
+      if($('#historical').hasClass('show')){
+        $('#historical').addClass('hide');
+        $('#historical').removeClass('show');
+      }
+    
+    }else{
+      $('#'+type).removeClass("show");
+      $('#'+type).addClass("hide");
+    }
+    (createElement(educational , type));
+   
+
+  }
 }
- 
 
-
+//function to create Element
 function createElement(array , type){
-  
+
     for(var i = 0 ; i < array.length ; i++){
       obj=array[i];
-console.log(array[i])
-             $('#'+type).append("<div class='col-md-4 col-sm-4'> <img class='cover' src="+array[i].img+" alt='pic_1'><p class='description'>"+array[i].description+"</p><a href="+array[i].url+" target='_blank'><button class='btn btn-success'>Download</button></a></div>");
+      console.log(array[i])
+             $('#'+type).append("<div class='col-md-3 col-sm-4'><div class='book text-center'> <img class='cover' src="+array[i].img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+array[i].name+"</h4><p class='description'>"+array[i].description+"</p></div><a href="+array[i].url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
     }
 }
-$('.cart').click(function(){
-	if($('#hideDiv').hasClass("hide")){
-		$('#hideDiv').addClass("show");
-		$('#hideDiv').removeClass("hide");
-	}else{
-		$('#hideDiv').removeClass("show");
-		$('#hideDiv').addClass("hide");
-	}
-});
+$('#educational').addClass("show"); 
+$('#human-developement').addClass("show"); 
+$('#scientific').addClass("show"); 
+$('#historical').addClass("show"); 
+
 
 
