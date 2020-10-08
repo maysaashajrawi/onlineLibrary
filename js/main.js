@@ -235,31 +235,17 @@ function createElement(array , type){
        $('#'+type).append("<div class='col-md-3 col-sm-4 col-xs-5'><div class='book text-center'> <img class='cover' src="+array[i].img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+array[i].name+"</h4><p class='description'>"+array[i].description+"</p></div><a href="+array[i].url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
     }
 }
-// function htmlEntities(str) {
-//   return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-// }
+
+
 var newArray=[];
 newArray.push(religious);
 newArray.push(humanDevelopement);
 newArray.push(historical);
 
-// function searchFunc(){
-//   var inputField = document.getElementById('searchInput').value;
-//   // console.log(inputField)
-//   for(var i=0;i<newArray.length;i++){
-//     //pass every object in newArray
-//   const index1 = newArray[i].findIndex(function(object , index){
-//       if(object.name === inputField){
-//         $('#h').innerHTML="";
-//         $("#h").append("<div class='col-md-3 col-sm-4 col-xs-5'><div class='book text-center'> <img class='cover' src="+object.img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+object.name+"</h4><p class='description'>"+object.description+"</p></div><a href="+object.url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
-//       }
-//     });  
-//   } 
-// }
 
 function searchFunc(){
   var inputField = document.getElementById('searchInput').value;
-  // console.log(inputField)
+  // pass every element in newArray
   for(var i=0;i<newArray.length;i++){
     //pass every object in newArray
   const index1 = newArray[i].findIndex(function(object , index){
