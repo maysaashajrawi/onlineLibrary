@@ -230,13 +230,11 @@ function check(){
   
 //function to create Element
 function createElement(array , type){
-
     for(var i = 0 ; i < array.length ; i++){
       obj=array[i];
        $('#'+type).append("<div class='col-md-3 col-sm-4 col-xs-5'><div class='book text-center'> <img class='cover' src="+array[i].img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+array[i].name+"</h4><p class='description'>"+array[i].description+"</p></div><a href="+array[i].url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
     }
 }
-
 // function htmlEntities(str) {
 //   return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 // }
@@ -244,6 +242,20 @@ var newArray=[];
 newArray.push(religious);
 newArray.push(humanDevelopement);
 newArray.push(historical);
+
+// function searchFunc(){
+//   var inputField = document.getElementById('searchInput').value;
+//   // console.log(inputField)
+//   for(var i=0;i<newArray.length;i++){
+//     //pass every object in newArray
+//   const index1 = newArray[i].findIndex(function(object , index){
+//       if(object.name === inputField){
+//         $('#h').innerHTML="";
+//         $("#h").append("<div class='col-md-3 col-sm-4 col-xs-5'><div class='book text-center'> <img class='cover' src="+object.img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+object.name+"</h4><p class='description'>"+object.description+"</p></div><a href="+object.url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
+//       }
+//     });  
+//   } 
+// }
 
 function searchFunc(){
   var inputField = document.getElementById('searchInput').value;
@@ -258,22 +270,27 @@ function searchFunc(){
     });  
   } 
 }
+
+
+
+
+
+
+
 //sign in function
 var user=[{'name':'maysaa' , 'pass':'123'},{'name':'yahya' ,'pass':'456' }] 
 function signIn(){
   var nameInput=document.getElementById('name').value;
   var passInput=document.getElementById('pass').value;
   var par=document.getElementById('must');
-  if(nameInput === '' || passInput === ''){
-    par.innerHTML="You are miss name or password"
-  }
+  
   const checkFind = user.findIndex(function(object,index){
-
+   
     if(object.name.toLowerCase() === nameInput.toLowerCase() && object.pass === passInput){
       window.location.href = "index.html";
     }else{
       
-      par.innerHTML='You are forget name or password';
+      par.innerHTML='your name or password is not correct';
     }
     
   })

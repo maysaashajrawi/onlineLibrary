@@ -30,7 +30,7 @@
 }
 label{
 	font-size: 25px;
-    color: #5cb85c;
+    color: #ec9e90;
 }
 .style{
 	font-size: 30px;
@@ -87,6 +87,9 @@ padding: 15px;
 	color:#063c69
 	/* text-align: center; */
 }
+a{
+	color:#696363;
+}
 .text-book{
 	padding-left: 3px;
 	padding-right: 3px;
@@ -113,8 +116,11 @@ footer>div{
 }
 footer{
 	background: #dddd;
+	
 }
-
+footer>div{
+	color:#ec9e90;
+}
 
 
 
@@ -173,9 +179,12 @@ footer{
   .myForm>label{
 	  color: seashell;
   }
-  #log{
+  #log,.logOut,#typeSearch{
 	  background-color: #ec9e90;
-	  font-size:20px
+	  font-size:16px;
+	  border-color: #ec9e90;
+	  color:#fff;
+	  font-weight: bold;
 	  
   }
   .signinPage{
