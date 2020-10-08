@@ -148,10 +148,8 @@ var historical=[{
                         
                      
 
-
+// check select element to appear element
 function check(){
-  
-
   var type=document.getElementById("bookType").value;
  
 //to appear human-developement books
@@ -206,8 +204,8 @@ function check(){
       $('#historical').addClass("show");
       $('#historical').removeClass("hide");
       if($('#religious').hasClass('show')){
-        $('#religious').addClass('hide');
-        $('#religious').removeClass('show');
+          $('#religious').addClass('hide');
+          $('#religious').removeClass('show');
       }
       if($('#human-developement').hasClass('show')){
         $('#human-developement').addClass('hide');
@@ -223,55 +221,56 @@ function check(){
   }
 }
   
-//function to create Element
+//function to create Element take array and type 
 function createElement(array , type){
+  // pass all element in array (object) to create element
     for(var i = 0 ; i < array.length ; i++){
-      obj=array[i];
-       $('#'+type).append("<div class='col-md-3 col-sm-4 col-xs-5'><div class='book text-center'> <img class='cover' src="+array[i].img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+array[i].name+"</h4><p class='description'>"+array[i].description+"</p></div><a href="+array[i].url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
+        $('#'+type).append("<div class='col-md-3 col-sm-4 col-xs-5'><div class='book text-center'> <img class='cover' src="+array[i].img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+array[i].name+"</h4><p class='description'>"+array[i].description+"</p></div><a href="+array[i].url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
     }
 }
 
-
+//array of all book type 
 var newArray=[];
 newArray.push(religious);
 newArray.push(humanDevelopement);
 newArray.push(historical);
-
+// search function
 function searchFunc(){
-  var inputField = document.getElementById('searchInput').value;
-  // pass every element in newArray
-  for(var i=0;i<newArray.length;i++){
-    //pass every object in newArray
-    const index1 = newArray[i].findIndex(function(object , index){
-    if(object.name === inputField){
-        $('#h').innerHTML="";
-        $("#h").append("<div class='col-md-3 col-sm-4 col-xs-5'><div class='book text-center'> <img class='cover' src="+object.img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+object.name+"</h4><p class='description'>"+object.description+"</p></div><a href="+object.url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
-    }
-  });  
-  } 
+    var inputField = document.getElementById('searchInput').value;
+    // pass every element in newArray
+    for(var i=0;i<newArray.length;i++){
+        //pass every object in newArray
+        const index1 = newArray[i].findIndex(function(object , index){
+          // check if element exit in array
+        if(object.name === inputField){
+
+           $('#h').innerHTML="";
+           //create new element if it is in arrays
+           $("#h").append("<div class='col-md-3 col-sm-4 col-xs-5'><div class='book text-center'> <img class='cover' src="+object.img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+object.name+"</h4><p class='description'>"+object.description+"</p></div><a href="+object.url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
+        }
+        });  
+    } 
 }
 
 
 
 //sign in function
-var user=[{'name':'maysaa' , 'pass':'123'},{'name':'yahya' ,'pass':'456' }] 
+//array of users
+var user=[{'name':'maysaa' , 'pass':'123'},{'name':'yahya' ,'pass':'456' }];
+//signin function
 function signIn(){
-  var nameInput=document.getElementById('name').value;
-  var passInput=document.getElementById('pass').value;
-  var par=document.getElementById('must');
-  
-  const checkFind = user.findIndex(function(object,index){
-   
-    if(object.name.toLowerCase() === nameInput.toLowerCase() && object.pass === passInput){
-      window.location.href = "index.html";
-    }else{
+    var nameInput=document.getElementById('name').value;
+    var passInput=document.getElementById('pass').value;
+    var par=document.getElementById('must');
+    const checkFind = user.findIndex(function(object,index){
+      if(object.name.toLowerCase() === nameInput.toLowerCase() && object.pass === passInput){
+          window.location.href = "index.html";
+      }else{
       
       par.innerHTML='your name or password is not correct';
     }
     
   })
-
-
 }
 
 
