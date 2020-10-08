@@ -114,3 +114,83 @@ footer>div{
 footer{
 	background: #dddd;
 }
+
+
+
+
+/* sign In  */
+ #name,#pass{
+	 width:100%
+ }
+
+ input[type=text], input[type=password] {
+
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+   
+  #log{
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+  }
+  
+  #log:hover {
+	opacity: 0.8;
+  }
+  
+/*   
+  .container {
+	padding: 16px;
+  } */
+  
+  span.psw {
+	float: right;
+	padding-top: 16px;
+  }
+  /* .centerCon{
+	  text-align: center;
+  } */
+ .formSign{
+	 width: 35%;
+	 height:500px;
+	 background-color: rgb(0, 0,0,0.6);
+
+
+	/* margin: 20px auto; */
+
+  }
+  .myForm{
+	  padding:20px;
+  }
+  .myForm>label{
+	  color: seashell;
+  }
+  #log{
+	  background-color: #ec9e90;
+	  font-size:20px
+	  
+  }
+  .signinPage{
+	  background-image: url('../img/background.jpg');
+	  height:100vh;
+	  width: 100%;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  /* background-color: rgb(0,0,0,0.6); */
+	  /* background-blend-mode: overlay; */
+	  background-size: cover;
+  } 
+  #must{
+	  font-size: 20px;
+	  color: #f74545;
+	  font-weight: bold;
+
+  }

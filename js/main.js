@@ -167,14 +167,7 @@ function check(){
         $('#historical').addClass('hide');
         $('#historical').removeClass('show');
       } 
-      // if($('#scientific').hasClass('show')){
-      //   $('#scientific').addClass('hide');
-      //   $('#scientific').removeClass('show');
-      // }
-      // if($('#educational').hasClass('show')){
-      //   $('#educational').addClass('hide');
-      //   $('#educational').removeClass('show');
-      // }
+ 
     
     }else{
       $('#'+type).removeClass("show");
@@ -200,14 +193,7 @@ function check(){
         $('#historical').addClass('hide');
         $('#historical').removeClass('show');
       } 
-      // if($('#scientific').hasClass('show')){
-      //   $('#scientific').addClass('hide');
-      //   $('#scientific').removeClass('show');
-      // }
-      // if($('#educational').hasClass('show')){
-      //   $('#educational').addClass('hide');
-      //   $('#educational').removeClass('show');
-      // }
+  
     
     }else{
       $('#'+type).removeClass("show");
@@ -232,15 +218,7 @@ function check(){
         $('#human-developement').addClass('hide');
         $('#human-developement').removeClass('show');
       } 
-      // if($('#scientific').hasClass('show')){
-      //   $('#scientific').addClass('hide');
-      //   $('#scientific').removeClass('show');
-      // }
-      // if($('#educational').hasClass('show')){
-      //   $('#educational').addClass('hide');
-      //   $('#educational').removeClass('show');
-      
-    
+
     }else{
       $('#'+type).removeClass("show");
       $('#'+type).addClass("hide");
@@ -255,9 +233,7 @@ function createElement(array , type){
 
     for(var i = 0 ; i < array.length ; i++){
       obj=array[i];
-      // console.log(array[i])
-      // htmlEntities(array[i].name);
-             $('#'+type).append("<div class='col-md-3 col-sm-4 col-xs-5'><div class='book text-center'> <img class='cover' src="+array[i].img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+array[i].name+"</h4><p class='description'>"+array[i].description+"</p></div><a href="+array[i].url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
+       $('#'+type).append("<div class='col-md-3 col-sm-4 col-xs-5'><div class='book text-center'> <img class='cover' src="+array[i].img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+array[i].name+"</h4><p class='description'>"+array[i].description+"</p></div><a href="+array[i].url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
     }
 }
 
@@ -282,6 +258,53 @@ function searchFunc(){
     });  
   } 
 }
+//sign in function
+var user=[{'name':'maysaa' , 'pass':'123'},{'name':'yahya' ,'pass':'456' }] 
+function signIn(){
+  var nameInput=document.getElementById('name').value;
+  var passInput=document.getElementById('pass').value;
+  var par=document.getElementById('must');
+  if(nameInput === '' || passInput === ''){
+    par.innerHTML="You are miss name or password"
+  }
+  const checkFind = user.findIndex(function(object,index){
+
+    if(object.name.toLowerCase() === nameInput.toLowerCase() && object.pass === passInput){
+      window.location.href = "index.html";
+    }else{
+      
+      par.innerHTML='You are forget name or password';
+    }
+    
+  })
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
