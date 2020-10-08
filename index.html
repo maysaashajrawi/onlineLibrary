@@ -16,67 +16,51 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Online Library</a>
+      <a class="navbar-brand style" href="#">Online Library</a>
     </div>
     <div class="searchbar navbar-right">
     <input id="searchInput" class="mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0"  onclick='searchFunc()'>Search</button>
+    <button class="btn btn-success  btn-outline-success my-2 my-sm-0"  onclick='searchFunc()'>Search</button>
   </div>
   </div>
 </nav>
 <div class="container">
 	<div class="row">
 		<div></div>
-    			<label class="control-label col- col-sm-4">Choose your favourite type:</label>
-    			<div class="col-sm-4">
-				
+    		<label class="control-label col- col-sm-4">Choose your favourite type:</label>
+    		<div class="col-sm-4">
       			<select  id="bookType">
 					<option value ="religious" class="op"><a href="#religious">Religious</a> </option>
 					<option value="historical" class="op"><a href="#historical">Historical</a></option>
 					<option value="human-developement" class="op"><a href="#human-developement">Human developement</a></option>
-					<option value="scientific" class="op"><a href="#scientific">scientific</a></option>
-					
-
-				</select>
-
-				
-
-    			
-    			<button class="btn btn-outline-success my-2 my-sm-0" id="typeSearch" onclick=check()>Search</button> 
+					<!-- <option value="scientific" class="op"><a href="#scientific">scientific</a></option> -->
+				</select>    			
+    			<button class="btn  btn-success   btn-outline-success my-2 my-sm-0" id="typeSearch" onclick=check()>Search</button> 
   			
 			</div>
-		
 	</div>
 </div>
 
 <div class="container">
-	<div class="row h">
-	<div class="forSearch">
+	<div class="row h" id="h">
+	
 	<div id="religious" class='ho hide'></div>
 	<div id="historical" class='ho hide'></div>
 	<div id="human-developement" class='ho hide'></div>
-	<div id="scientific" class='ho hide'></div>
-	<div id="searchresult" class='ho hide'></div>
 	</div>
 	</div>
-
 </div>
-
+<footer>
 	<div class="container">
-		<div class="row searchResult">
-
+		<div class="row">
+			<div class="center">
+				Maysa'a Library @2020
+			</div>
 		</div>
 	</div>
 
-
-
-
-
-
-
-
-</div>
-
+	
+</footer>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

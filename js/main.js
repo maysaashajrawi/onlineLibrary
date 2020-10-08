@@ -92,47 +92,57 @@ var religious=[{
                       }
                     ]
 // array of object of historical books 
-var historical=[{name:"سيرة أمير المؤمنين عمر بن الخطاب",
-                 img:"img/h1.jpg",
-                 description:'يقدم الصلابى شخصية امير المؤمنين عمر بن الخطاب بصورة مميزة كما لم يتحدث عنها كاتب من قبل، يتناول الصلابى فى هذا الكتاب عصر أمير المؤمنين ومراحل حياته و أهم الأحداث فى حياته منذ ولادته وحتى توليه زمام أمور الدولة الإسلامية وتوليه شأن المسلمين.',
-
-                 url:"https://www.noor-book.com/%D9%83%D8%AA%D8%A7%D8%A8-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%A3%D9%85%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D8%A4%D9%85%D9%86%D9%8A%D9%86-%D8%B9%D9%85%D8%B1-%D8%A8%D9%86-%D8%A7%D9%84%D8%AE%D8%B7%D8%A7%D8%A8-pdf"
+var historical=[{
+                  name:"سيرة أمير المؤمنين عمر بن الخطاب",
+                  img:"img/h-2.jpg",
+                  description:'يقدم الصلابى شخصية امير المؤمنين عمر بن الخطاب بصورة مميزة كما لم يتحدث عنها كاتب من قبل، يتناول الصلابى فى هذا الكتاب عصر أمير المؤمنين ومراحل حياته و أهم الأحداث فى حياته منذ ولادته وحتى توليه زمام أمور الدولة الإسلامية وتوليه شأن المسلمين.',
+                  url:"https://www.noor-book.com/%D9%83%D8%AA%D8%A7%D8%A8-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%A3%D9%85%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D8%A4%D9%85%D9%86%D9%8A%D9%86-%D8%B9%D9%85%D8%B1-%D8%A8%D9%86-%D8%A7%D9%84%D8%AE%D8%B7%D8%A7%D8%A8-pdf"
                 },
-                {name:"مائة من عظماء أمة الاسلام",
-                img:"",
-                description:'',
-                url:""},
-                {name:"",
-                img:"",
-                description:'',
-                url:""},
-                {name:"",
-                img:"",
-                description:'',
-                url:""},
-                {name:"",
-                img:"",
-                description:'',
-                url:""},
-                {name:"",
-                img:"",
-                description:'',
-                url:""},
-                {name:"",
-                img:"",
-                description:'',
-                url:""},
-                {name:"",
-                img:"",
-                description:'',
-                url:""},{name:"",
-                img:"",
-                description:'',
-                url:""},
-                {name:"",
-                img:"",
-                description:'',
-                url:""},]
+                {
+                  name:"مائة من عظماء أمة الاسلام",
+                  img:"img/h-3.jpg",
+                  description:'ماهى بنود نظرية الغزو التاريخي؟و من هم غزاة التاريخ؟ماهى حكاية الاخوان بربروسا؟و من هو المحارب الثالث عشر؟ كيف نشأ المذهب الشيعى؟و ما هى الخصائص السبعة للشيعة في اى موضع بالضبط يوجد اسم"أحمد"فى الانجيل؟ما حكاية الرجل الغامض آريوس؟ ومن هم الاريوسيين الذين ذكرهم رسول الله-صلى الله عليه وسلم-في رسالته لهرقل؟ ماذا كتب هارون الرشيد على ظهر رسالة نقفور؟وماذا كتب المعتمد ابن عباد على ظهر رسالة ألفونسو',
+                  url:"foulabook.com/ar/book/مائة-من-عظماء-أمة-الإسلام-غيروا-مجرى-التاريخ-pdf"},
+                {
+                  name:"قصة الاندلس",
+                  img:"img/h-4.jpg",
+                  description:' فقد بدأ موسى بن نصير فتح الشمال الإفريقي وقد تجاوزالستين من عمره ؛ أي تجاوز سنَّ المعاش في زمننا هذا ، ثم ها هو ذا في سنِّ الخامسة والسبعين يحزن حزنا ً شديداً ، ولكن على أي شيئٍ كان حزنه ؟! حزن أولا على أمر الوليد بن عبد الملك له بترك ساحة الجهاد ، وقد كان محباًّ له ؛ علَّه ينال الشهاده التى لم تُصِبْهُ ',
+                  url:"https://www.noor-book.com/%D9%83%D8%AA%D8%A7%D8%A8-%D9%82%D8%B5%D8%A9-%D8%A7%D9%84%D8%A3%D9%86%D8%AF%D9%84%D8%B3-%D9%85%D9%86-%D8%A7%D9%84%D9%81%D8%AA%D8%AD-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D8%B3%D9%82%D9%88%D8%B7-pdf"
+                },
+                
+                  {
+                  name:"استرداد عمر",
+                  img:"img/h-6.jpg",
+                  description: ' نظر الكاتب إلي وجود العديد من الدمار والخراب في الدول العربية والإسلامية وجميع الشعوب غير قادرة على العيش عيشة كريمة, لذلك قام بفكرة كتابه حتى يستطيع استرداد سيدنا عمر من الكتب الموجودة بداخل المكتبات إلي الواقع الذي نعيش فيه ولكن بأسلوب مختلف حتى يستطيع القراء والمثقفين فهمه, وبالتالي من الممكن أن نفهم الفكر العمري ونقوم بتطبيقه لقيام الدول مرة أخرى ونهوضها من جديد, وهذا ما فكر به الكاتب حين قام بتأليف هذا الكتا',
+                  url:"https://www.alarabimag.com/books/23003-%D8%A7%D8%B3%D8%AA%D8%B1%D8%AF%D8%A7%D8%AF-%D8%B9%D9%85%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A9-%D8%A5%D9%84%D9%8A.html"},
+                {
+                  name:"فلسطين التاريخ المصور",
+                  img:"img/h-7.jpg",
+                  description:'إن فضل البقعة التي وجد فيها بيت المقدس ثابت تاريخياً، وفي نصوص القرآن والسنة الكثيرة. ولا شك أن هذا الفضل يعود لأحقاب ضاربة في القدم، ففي هذه البقعة نشأ ومات كثير من الأنبياء والرسل، وكانت مهبطاً لكثير من الرسالات والوحي، وبها جرت أعظم أحداث التاريخ القديم. وعلى الرغم من ذلك؛ فإن جهلاً عظيماً يحيط بالناس فيما يتعلق بتاريخ القدس والأقصى وأرض فلسطين المباركة. هذا وإن القضية المثارة حول الأقصى هي بحق من أهم قضايا المسلمين الحالية، من هذا المنطلق يأتي هذا العمل "فلسطين.. التاريخ المصور" الذي هو خدمة لتلك القضية',
+                  url:"https://foulabook.com/ar/book/%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86..-%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE-%D8%A7%D9%84%D9%85%D8%B5%D9%88%D8%B1-pdf"},
+                {
+                  name:"هكذا ظهر جيل صلاح الدين و هكذا عادت القدس",
+                  img:"img/h-8.jpg",
+                  description:'يقول في المقدمة: إن هذا الكتاب دعوة إلى اعادة قراءة تاريخنا واستلهام نماذجه الناجحة، ودعوة إلى فقه سنن التغيير وكيف ان ظاهرة صلاح الدين ليست ظاهرة بطولة فردية خارقة ولكنها خاتمة ونهاية ونتيجه مقدرة لعوامل التجديد ولجهود الامة المجتهدة، وهي ثمرة مائة عام من محاولات التجديد والإصلاح. وبذلك فهي نموذج قابل للتكرار في كل العصور.',
+                  url:"https://www.noor-book.com/%D9%83%D8%AA%D8%A7%D8%A8-%D9%87%D9%83%D8%B0%D8%A7-%D8%B8%D9%87%D8%B1-%D8%AC%D9%8A%D9%84-%D8%B5%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D8%AF%D9%8A%D9%86-%D9%88%D9%87%D9%83%D8%B0%D8%A7-%D8%B9%D8%A7%D8%AF%D8%AA-%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1-%D9%85%D8%A7%D8%AC%D8%AF-%D8%B9%D8%B1%D8%B3%D8%A7%D9%86-%D8%A7%D9%84%D9%83%D9%8A%D9%84%D8%A7%D9%86%D9%8A-pdf"
+                },
+                { 
+                  name:"علي بن ابي طالب",
+                  img:"img/h-9.jpg",
+                  description:'سيرة الامام علي بن ابي طالب',
+                  url:"https://www.haydarya.com/maktaba_moktasah/05/book_50/sirah.pdf"
+                },
+                {
+                  name:"عمر المختار",
+                  img:"img/h-12.jpg",
+                  description:'كان عمر المختار متوسط القامة يميل إلى الطول قليلاً، ولم يكن بالبدين الممتلئ أو النحيف الفارغ، أجش الصوت بدوي اللهجة، رصين المنطق، صريح العبارة، لايمل حديثه، متزن في كلامه، تفتر ثناياه أثناء الحديث عن ابتسامة بريئة، أو ضحكة هادئة إذا ما اقتضاها الموقف، كثيف اللحية وقد أرسلها منذ صغره، تبدو عليه صفات الوقار والجدية في العمل، والتعقل في الكلام والثبات عند المبدأ وقد أخذت هذه الصفات تتقدم معه بتقدم السن',
+                  url:"https://foulabook.com/ar/book/%D8%A7%D9%84%D8%B4%D9%8A%D8%AE-%D8%A7%D9%84%D8%AC%D9%84%D9%8A%D9%84-%D8%B9%D9%85%D8%B1-%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D8%A7%D8%B1-pdf"
+                },
+                {
+                  name:"طبائع الاستبداد و مصارع الاستعباد",
+                  img:"img/h-11.jpg",
+                  description:'عاش عبد الرحمن الكواكبي خلال النصف الثاني من القرن التاسع عشر، وهي فترة عانت الأمم العربية فيها الكثير من الضعف والهوان، فهمَّ المستعمِر بها يغتصب أراضيها، ويستنزف مواردها، وقد شخص عبد الرحمن الكواكبي في كتابه «طبائع الاستبداد ومصارع الاستعباد» سبب هذا الداء الذي رآه يتمثل في الاستبداد السياسي، بأنواعه الكثيرة، ومنها استبداد الجهل على العلم، و استبداد النفس على العقل، فهو يقول: إن الله خلق الإنسان حرّا، قائده العقل، فكفر وأبى إلا أن يكون عبدًا قائده الجهل، و يرى إن المستبد فرد عاجز، لا حول له ولا قوة إلا بأعوانه أعداء العدل وأنصار الجور، وأن تراكم الثروات المفرطة، مولِّدٌ للاستبداد، ومضرٌ بأخلاق الأفراد، وأن الاستبداد أصل لكل فساد، فيجد أن الشورى الدستورية هي دواؤه.',
+                  url:"https://www.hindawi.org/books/30272530/"},]
                  
                         
                         
@@ -157,14 +167,14 @@ function check(){
         $('#historical').addClass('hide');
         $('#historical').removeClass('show');
       } 
-      if($('#scientific').hasClass('show')){
-        $('#scientific').addClass('hide');
-        $('#scientific').removeClass('show');
-      }
-      if($('#educational').hasClass('show')){
-        $('#educational').addClass('hide');
-        $('#educational').removeClass('show');
-      }
+      // if($('#scientific').hasClass('show')){
+      //   $('#scientific').addClass('hide');
+      //   $('#scientific').removeClass('show');
+      // }
+      // if($('#educational').hasClass('show')){
+      //   $('#educational').addClass('hide');
+      //   $('#educational').removeClass('show');
+      // }
     
     }else{
       $('#'+type).removeClass("show");
@@ -190,14 +200,14 @@ function check(){
         $('#historical').addClass('hide');
         $('#historical').removeClass('show');
       } 
-      if($('#scientific').hasClass('show')){
-        $('#scientific').addClass('hide');
-        $('#scientific').removeClass('show');
-      }
-      if($('#educational').hasClass('show')){
-        $('#educational').addClass('hide');
-        $('#educational').removeClass('show');
-      }
+      // if($('#scientific').hasClass('show')){
+      //   $('#scientific').addClass('hide');
+      //   $('#scientific').removeClass('show');
+      // }
+      // if($('#educational').hasClass('show')){
+      //   $('#educational').addClass('hide');
+      //   $('#educational').removeClass('show');
+      // }
     
     }else{
       $('#'+type).removeClass("show");
@@ -222,56 +232,24 @@ function check(){
         $('#human-developement').addClass('hide');
         $('#human-developement').removeClass('show');
       } 
-      if($('#scientific').hasClass('show')){
-        $('#scientific').addClass('hide');
-        $('#scientific').removeClass('show');
-      }
-      if($('#educational').hasClass('show')){
-        $('#educational').addClass('hide');
-        $('#educational').removeClass('show');
-      }
+      // if($('#scientific').hasClass('show')){
+      //   $('#scientific').addClass('hide');
+      //   $('#scientific').removeClass('show');
+      // }
+      // if($('#educational').hasClass('show')){
+      //   $('#educational').addClass('hide');
+      //   $('#educational').removeClass('show');
+      
     
     }else{
       $('#'+type).removeClass("show");
       $('#'+type).addClass("hide");
     }
     (createElement(historical , type));
-   
-
-  }
-  //to appear historical books
-  else if(type === "educational"){
-    if($('#educational').hasClass("hide")){
-      $('#educational').addClass("show");
-      $('#educational').removeClass("hide");
-
-      if($('#religious').hasClass('show')){
-        $('#religious').addClass('hide');
-        $('#religious').removeClass('show');
-      }
-      if($('#human-developement').hasClass('show')){
-        $('#human-developement').addClass('hide');
-        $('#human-developement').removeClass('show');
-      } 
-      if($('#scientific').hasClass('show')){
-        $('#scientific').addClass('hide');
-        $('#scientific').removeClass('show');
-      }
-      if($('#historical').hasClass('show')){
-        $('#historical').addClass('hide');
-        $('#historical').removeClass('show');
-      }
-    
-    }else{
-      $('#'+type).removeClass("show");
-      $('#'+type).addClass("hide");
-    }
-    (createElement(educational , type));
-   
-
+  
   }
 }
-
+  
 //function to create Element
 function createElement(array , type){
 
@@ -298,9 +276,8 @@ function searchFunc(){
     //pass every object in newArray
   const index1 = newArray[i].findIndex(function(object , index){
       if(object.name === inputField){
-        
-        console.log("hello");
-        $(".searchResult").append("<div class='col-md-3 col-sm-4 col-xs-5'><div class='book text-center'> <img class='cover' src="+object.img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+object.name+"</h4><p class='description'>"+object.description+"</p></div><a href="+object.url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
+        $('#h').innerHTML="";
+        $("#h").append("<div class='col-md-3 col-sm-4 col-xs-5'><div class='book text-center'> <img class='cover' src="+object.img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+object.name+"</h4><p class='description'>"+object.description+"</p></div><a href="+object.url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
       }
     });  
   } 
