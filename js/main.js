@@ -199,11 +199,6 @@ function check(){
       $('#'+type).removeClass("show");
       $('#'+type).addClass("hide");
     }
-
-
-
-
-
   }
   //to appear historical books
   else if(type === "historical"){
@@ -242,24 +237,19 @@ newArray.push(religious);
 newArray.push(humanDevelopement);
 newArray.push(historical);
 
-
 function searchFunc(){
   var inputField = document.getElementById('searchInput').value;
   // pass every element in newArray
   for(var i=0;i<newArray.length;i++){
     //pass every object in newArray
-  const index1 = newArray[i].findIndex(function(object , index){
-      if(object.name === inputField){
+    const index1 = newArray[i].findIndex(function(object , index){
+    if(object.name === inputField){
         $('#h').innerHTML="";
         $("#h").append("<div class='col-md-3 col-sm-4 col-xs-5'><div class='book text-center'> <img class='cover' src="+object.img+" alt='pic_1'><div class='text-book'><h4 class='title'>"+object.name+"</h4><p class='description'>"+object.description+"</p></div><a href="+object.url+" target='_blank'><button class='btn btn-success center'>Download</button></a></div></div>");
-      }
-    });  
+    }
+  });  
   } 
 }
-
-
-
-
 
 
 
